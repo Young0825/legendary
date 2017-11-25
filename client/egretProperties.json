@@ -9,6 +9,16 @@
   },
   "egret_version": "5.0.13",
   "template": {},
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins",
+      "src/skins"
+    ],
+    "themes": [
+      "resource/default.thm.json"
+    ],
+    "exmlPublishPolicy": "content"
+  },
   "modules": [
     {
       "name": "egret"
@@ -17,10 +27,13 @@
       "name": "game"
     },
     {
-      "name": "tween"
+      "name": "res"
     },
     {
-      "name": "res"
+      "name": "eui"
+    },
+    {
+      "name": "tween"
     },
     {
       "name": "promise",

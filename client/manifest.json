@@ -3,12 +3,26 @@
 		"libs/modules/egret/egret.js",
 		"libs/modules/egret/egret.web.js",
 		"libs/modules/game/game.js",
-		"libs/modules/tween/tween.js",
 		"libs/modules/res/res.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/tween/tween.js",
 		"promise/bin/promise.js"
 	],
 	"game": [
+		"bin-debug/baseModuel/BaseUI.js",
+		"bin-debug/baseModuel/Mediator.js",
+		"bin-debug/Main.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/base/FormGetRequest.js",
+		"bin-debug/base/FormPostRequest.js",
+		"bin-debug/baseModuel/AppFacade.js",
 		"bin-debug/LoadingUI.js",
-		"bin-debug/Main.js"
+		"bin-debug/baseModuel/Dictionary.js",
+		"bin-debug/baseModuel/IDictionary.js",
+		"bin-debug/baseModuel/IMediator.js",
+		"bin-debug/baseModuel/MainUIView.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/ui/test/TestUIMediator.js",
+		"bin-debug/ui/test/TestUIView.js"
 	]
 }

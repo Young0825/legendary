@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TestUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_jpg" x="0" y="0"/>
+	<e:EditableText id="inputEditor" width="360" height="40" text="" x="52" y="46" verticalAlign="middle" textAlign="left" textColor="0x000000" background="true" backgroundColor="0xffffff" anchorOffsetX="0" prompt="请输入get请求函数"/>
+	<e:Label id="dataLabel" text="data" x="52" y="86" width="360" height="100" textColor="0x000000" background="true" backgroundColor="0xffffff" verticalAlign="middle"/>
+	<e:Button id="getBtn" label="get请求" x="420" y="46"/>
+</e:Skin>
