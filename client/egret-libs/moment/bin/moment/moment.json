@@ -1,0 +1,10 @@
+{
+    "name": "moment",
+    "dependence": [],
+    "source":"./",
+    "file_list": [
+        "moment.js",
+        "moment-node.d.ts",
+        "moment.d.ts"
+    ]
+}
