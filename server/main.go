@@ -7,14 +7,15 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/serverTest", serverTest)
-	err := http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/", sayHelloWorld)
+	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+		log.Fatal("ListenAndServe:", err)
 	}
 }
 
-func serverTest(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello world!!!!")
-	fmt.Println("r = ", r)
+func sayHelloWorld(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	fmt.Println(r.Form)
+	fmt.Println("path", r.URL.Path)
 }
