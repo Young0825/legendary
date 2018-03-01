@@ -2,20 +2,26 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"net/http"
 )
 
 func main() {
-	http.HandleFunc("/", sayHelloWorld)
-	err := http.ListenAndServe(":9090", nil)
-	if err != nil {
-		log.Fatal("ListenAndServe:", err)
-	}
+	// http.HandleFunc("/serverTest", serverTest)
+	// err := http.ListenAndServe(":8080", nil)
+	// if err != nil {
+	// 	log.Fatal("ListenAndServe: ", err)
+	// }
+	add, mul := sumAndProduct(2, 3)
+	fmt.Println(add)
+	fmt.Println(mul)
 }
 
-func sayHelloWorld(w http.ResponseWriter, r *http.Request) {
-	r.ParseForm()
-	fmt.Println(r.Form)
-	fmt.Println("path", r.URL.Path)
+func sumAndProduct(a, b int) (add int, mul int) {
+	add = a + b
+	mul = a * b
+	return
 }
+
+// func serverTest(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "Hello world!!!!")
+// 	fmt.Println("r = ", r)
+// }
